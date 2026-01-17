@@ -333,3 +333,13 @@ endif
 
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf
+
+# Axion Stuff
+TARGET_DISABLE_EPPE := true
+TARGET_ENABLE_BLUR := true
+TARGET_INCLUDES_LOS_PREBUILTS := true
+GPU_FREQS_PATH := /sys/kernel/gpu/gpu_freq_table
+GPU_MIN_FREQ_PATH := /sys/kernel/gpu/gpu_min_clock
+PERF_GOV_SUPPORTED := false
+PERF_DEFAULT_GOV := schedutil
+PERF_ANIM_OVERRIDE := false
